@@ -1198,10 +1198,17 @@ body {
     border-radius: 20px 20px 20px 20px;
     border: 1px solid #E7F3FF;
     background: #F8FBFF;
+    transition: all ease-in .5s;
 }
 
 .accordionHead.is-open {
     border-radius: 20px 20px 0 0;
+    border: 1px solid #5e6062;
+    transition: all ease-in .5s;
+}
+.accordionHead.is-open .title{
+    font-weight: 600;
+    color: #2b2b2b;
 }
 
 .accordionHead .title {
