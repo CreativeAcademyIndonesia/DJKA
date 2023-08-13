@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title> Checksheet DJKA</title>
+        <link rel="stylesheet" href="css/font/poppins.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/datatables/dt.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/primary.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <nav class="navbar">
+        <div class="navStart">
+            <div class="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        <div class="navEnd">
+            <img src="img/logo/dishub.svg" alt="" class="dishubImg">
+            <img src="img/logo/djka.svg" alt="" class="djkaImg">
+        </div>
+    </nav>
+    <div id="backdrop" class="">
+        <button class="hideBar"></button>
+    </div>
+    <div id="sideBar" class="sidebar">
+        <div class="sideLogo">
+            <img src="img/logo/dishub.svg" alt="" class="dishubImg">
+            <img src="img/logo/djka.svg" alt="" class="djkaImg">
+        </div>
+        <ul class="nav-links">
+            <div class="titleNav">Beranda</div>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-pie-chart"></i>
+                    </div>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <div class="titleNav mt-3">Master Data</div>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-compass"></i>
+                    </div>
+                    <span class="link_name">Location</span>
+                </a>
+            </li>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-inboxes-fill"></i>
+                    </div>
+                    <span class="link_name">Aset Sarana</span>
+                </a>
+            </li>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <span class="link_name">Tools</span>
+                </a>
+            </li>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <span class="link_name">Spare Part</span>
+                </a>
+            </li>
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-person-lines-fill"></i>
+                    </div>
+                    <span class="link_name">SDM</span>
+                </a>
+            </li>
+        </ul>
+        <div class="containerAccount">
+            <img src="img/user.jpg" alt="">
+            <div class="containerText">
+                <div class="name">Hendra Sugandi</div>
+                <div class="job">System Administrator</div>
+            </div>
+            <a href="login.html"><i class="bi bi-box-arrow-right"></i></a>
+        </div>
+    </div>
+    <section class="content">
+        <form action="">
+            <div class="row mt-4">
+                <div class="col-12 mb-4">
+                    <div class="title-dashboard">Checksheet</div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-primary">
+                        <p class="titles">Informasi</p>
+                        <div class="w-100">
+                            <div class="labelForm mb-2">Tanggal Pelaksanaan</div>
+                            <input type="date" class="form-control" id="" name="" placeholder="Input Tanggal Pelaksanaan...">
+                        </div>
+                        <div class="w-100">
+                            <div class="labelForm mb-2">No Sarana</div>
+                            <input type="text" class="form-control" id="" name="" placeholder="Input No Sarana...">
+                        </div>
+                        <div class="w-100">
+                            <div class="labelForm mb-2">Tempat Pelaksanaan</div>
+                            <input type="text" class="form-control" id="" name="" placeholder="Input Tempat Pelaksanaan...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-sm-4 mt-lg-0">
+                    <div class="card-primary h-100">
+                        <p class="titles">Keterangan</p>
+                        <div class="w-100">
+                            <div class="labelForm mb-2">Keterangan</div>
+                            <textarea name="" class="form-control coment-input" id="" cols="30" rows="100"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <div class="card-primary ">
+                        <p class="titles">Checksheet</p>
+                        <div class="d-flex gap-1 flex-column w-100">
+                            <div class="accordion">
+                              <div class="accordionHead">
+                                <div class="title">I. Bogie,Gearbox, Dan Gardan Shaft</div>
+                                <i class="bi bi-arrow-right-circle"></i>
+                              </div>
+                              <div class="accordionBody">
+                                <div class="accordionContent">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Tidak cacat/rusak)</span>
+                                        <div class="labelForm sm mb-2">Wheelset (Cek visual keretakan) (Tidak cacat/rusak)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                    <hr class="pt-1">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Marking tidak geser)</span>
+                                        <div class="labelForm sm mb-2">Gearbox (cek visual kelengkapan fastening/mur baut)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                    <hr class="pt-1">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Lengkap,tidak kendur)</span>
+                                        <div class="labelForm sm mb-2">Gardan shaft (cek visual kelengkapan fastening/mur baut)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point3" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point3" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                    <hr class="pt-1">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Tidak bocor grease)</span>
+                                        <div class="labelForm sm mb-2">Journal bearing (Cek kondisi dari kebocoran grease overheadting)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point4" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point4" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                    <hr class="pt-1">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Tidak retak,terpasang)</span>
+                                        <div class="labelForm sm mb-2">Tread brake (Brake cylinder) (Cek instalasi tread brake dari bogie frame)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point5" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point5" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                    <hr class="pt-1">
+                                    <div class="w-100">
+                                        <span class="text-small-grey">Standar - (Tebal minimal 10mm)</span>
+                                        <div class="labelForm sm mb-2">rem blok (Cek kondisi)</div>
+                                        <div class="d-flex gap-1 align-items-center py-1">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point5" id="OK" checked>
+                                                <label class="form-check-label pe-4" for="OK">
+                                                  OK
+                                                </label>
+                                            </div>
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="point5" id="NO OK">
+                                                <label class="form-check-label" for="NO OK">
+                                                  NOT OK
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">II. Alat Perangkai Mekanik</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Tidak cacat/rusak)</span>
+                                            <div class="labelForm sm mb-2">Automatic coupler (Cek visual kondisi coupler,knuckel,pin knuckle dan pengunci)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Terpasang lengkap,kondisi baik)</span>
+                                            <div class="labelForm sm mb-2">Rantai pengaman (Cek visual rantai pengaman)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">III. Main Diesel Engine</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Engine hour meter /jam operasi engine (Catat jam operasi engine pada main display module di kabin)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Batas add-full deep sick)</span>
+                                            <div class="labelForm sm mb-2">level oli engine (Cek level oli engine)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Tidak aus atau retak)</span>
+                                            <div class="labelForm sm mb-2">Belt alternator (Cek /stel/ganti belt)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Tidak cacat/retak)</span>
+                                            <div class="labelForm sm mb-2">Hose dan klem (Cek semua hose dari kebocoran,pecah,lembek,dan klem yang lepas)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Tidak rusak/pecah)</span>
+                                            <div class="labelForm sm mb-2">Panel instrumen (Cek kondisi gauge dari kerusakan/pecah)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">IV. Auxiliary Genset</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Engine hour meter/ Jam operasi genset (Catat jam operasi engine)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Batas low-full deep stick)</span>
+                                            <div class="labelForm sm mb-2">Level oli genset (Cek level oli genset)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Coolant level/air radiator (Cek level coolant,tambahkan jika diperlukan)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Tidak retak/ sobek,lembek,menggelembung)</span>
+                                            <div class="labelForm sm mb-2">Hose dan klem (Cek kondisi hose dan klem)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Water temperatur</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Oli pressure</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">V. Transmisi Dan Cooling Unit</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Batas max-min)</span>
+                                            <div class="labelForm sm mb-2">Oli Transmisi (Cek level oli)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Lengkap & Kencang)</span>
+                                            <div class="labelForm sm mb-2">Fastening/mur baut (Cek kelengkapan dan kekencangan fastening antara engine-transmisi serta transmisi-gardan shaft)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Batas max-min)</span>
+                                            <div class="labelForm sm mb-2">Hydrostatic tank (Cek level oli)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Cooling system (Cek level coolant,tambahkan jika dibutuhkan)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">VI. Pengereman & Suplay Udara</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Tekanan udara</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - P= 9,5 bar</span>
+                                            <div class="labelForm sm mb-2">Main reservoir (Cek pressure gauge sebelah kiri jarum warna merah)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - P= 5 bar</span>
+                                            <div class="labelForm sm mb-2">Brake pipe (Saat release brake) (Cek pressure gauge sebelah kiri jarum warna putih)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Fungsi kerja pengereman</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Automatic brake Full service brake</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Parking brake</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Independent brake (Full independen brake)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Pressure switch kompresor (Cek fungsi cut in dan cut off kompresor)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Bersih)</span>
+                                            <div class="labelForm sm mb-2">Tekanan udara (Keluarkan uap dan endapan pada tangki udara)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Batas min-max gelas dugasaat kompresor ON)</span>
+                                            <div class="labelForm sm mb-2">Oli kompresor (Cek level oli kompresor)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Jam kerja kompresor (Catat jam kerja kompresor)</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">VII. Peralatan Kelengkapan Lokomotif</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Horn/Klakson</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Headlight</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Lampu Sinyal</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Speedometer</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Radiolok</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Berfungsi)</span>
+                                            <div class="labelForm sm mb-2">Pemadam api (APAR)	</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 1...">
+                                                <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (380 VAC ± 10%)</span>
+                                            <div class="labelForm sm mb-2">Volmeter 380 VAC</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">VAC</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">VAC</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">Standar - (Minimal 23 VDC)</span>
+                                            <div class="labelForm sm mb-2">Volmeter 24 VDC</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">VDC</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">VDC</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Amperemeter</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">Amp</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">Amp</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Water temperature</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">°c</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">°c</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Oli pressure</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">psi</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">psi</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">RPM meter</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">rpm</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">rpm</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Fuel meter</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">%</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">%</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">-</span>
+                                            <div class="labelForm sm mb-2">Oli temperatur</div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">°c</span>
+                                                </div>                                              
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="-" aria-label="-" aria-describedby="basic-addon2">
+                                                    <span class="input-group-text rounded-start rounded-4">°c</span>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                        <hr class="pt-1">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordionHead">
+                                    <div class="title">VIII. Peralatan Keselamatan</div>
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                                <div class="accordionBody">
+                                    <div class="accordionContent">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">(Ada,tidak kadaluarsa)</span>
+                                            <div class="labelForm sm mb-2">Tabung pemadam kebakaran (APAR) expired date</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point1" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">(Masing-masing 1 buah)</span>
+                                            <div class="labelForm sm mb-2">Bendera merah dan kuning</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                        <hr class="pt-1">
+                                        <div class="w-100">
+                                            <span class="text-small-grey">(Jumlah)</span>
+                                            <div class="labelForm sm mb-2">Stop block</div>
+                                            <div class="d-flex gap-1 align-items-center py-1">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                                    <label class="form-check-label pe-4" for="OK">
+                                                    OK
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                                    <label class="form-check-label" for="NO OK">
+                                                    NOT OK
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 py-4">
+                                <div class="labelForm mb-2">Keterangan Lainnya</div>
+                                <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
+                                <div class="d-flex gap-1 align-items-center py-3">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="point2" id="OK" checked>
+                                        <label class="form-check-label pe-4" for="OK">
+                                          Siap Oprasi
+                                        </label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="point2" id="NO OK">
+                                        <label class="form-check-label" for="NO OK">
+                                          Tidak Siap Oprasi
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btnLogin">Simpan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <img src="img/shape/shape-dashboard.svg" alt="" class="shapeDash">
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap-5.3.2.min.js"></script>
+    <script src="js/datatables/dt.js"></script>
+    <script src="js/apexchart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+
+        //     $('#DTtable').DataTable({
+        //         aLengthMenu: [
+        //             [5, 10, 25, 50, -1],
+        //             [5, 10, 25, 50, "All"]
+        //         ],
+        //         responsive: true,
+        //         bInfo: false,
+        //         paging: false,
+        //         language: {
+        //             'lengthMenu': 'Sort _MENU_',
+        //         }
+        //     });
+        // })
+    </script>    
+</body>
+</html>
