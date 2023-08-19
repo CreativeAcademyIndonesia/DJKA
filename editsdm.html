@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title> SDM DJKA</title>
+        <link rel="stylesheet" href="css/font/poppins.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/datatables/dt.css">
+        <link rel="stylesheet" href="css/sweetalert.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <nav class="navbar">
+        <div class="navStart">
+            <div class="nav-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        <div class="navEnd">
+            <img src="img/logo/dishub.svg" alt="" class="dishubImg">
+            <img src="img/logo/djka.svg" alt="" class="djkaImg">
+        </div>
+    </nav>
+    <div id="backdrop" class="">
+        <button class="hideBar"></button>
+    </div>
+    <div id="sideBar" class="sidebar">
+        <div class="sideLogo">
+            <img src="img/logo/dishub.svg" alt="" class="dishubImg">
+            <img src="img/logo/djka.svg" alt="" class="djkaImg">
+        </div>
+        <ul class="nav-links">
+            <!-- <div class="titleNav">Beranda</div> -->
+            <li class="nav-menu menu-link">
+                <a href="#">
+                    <div class="nav-icon">
+                        <i class="bi bi-pie-chart"></i>
+                    </div>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <!-- <div class="titleNav mt-3">Master Data</div> -->
+            <li class="nav-menu menu-down">
+                <div class="arrow-link">
+                    <a href="#">
+                        <div class="nav-name">
+                            <div class="link_name">Master Data</div>
+                            <i class="bi bi-chevron-right arrow"></i>
+                        </div>
+                    </a>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-compass"></i>
+                            </div>
+                            <span class="link_name">Location</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-inboxes-fill"></i>
+                            </div>
+                            <span class="link_name">Aset Sarana</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <span class="link_name">Tools</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+                            <span class="link_name">Spare Part</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-person-lines-fill"></i>
+                            </div>
+                            <span class="link_name">SDM</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="containerAccount">
+            <img src="img/user.jpg" alt="">
+            <div class="containerText">
+                <div class="name">Hendra Sugandi</div>
+                <div class="job">System Administrator</div>
+            </div>
+            <a href="login.html"><i class="bi bi-box-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="row mt-4">
+            <div class="col-12 mb-3">
+                <div class="title-content">Tambah SDM</div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="label-form">NIP</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input NIP...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Nama</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Nama...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Bagian</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Bagian...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Kompetensi</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Kompetensi...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">ID Sertifikasi</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input ID Sertifikasi...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Masa Berlaku</div>
+                        <input type="date" class="form-control mb-3" placeholder="Input Masa Berlaku...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Tempat Lahir</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Tempat Lahir...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Tanggal Lahir</div>
+                        <input type="date" class="form-control mb-3" placeholder="Input Tanggal Lahir...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Alamat</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Alamat...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Email</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Email...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Telp</div>
+                        <input type="text" class="form-control mb-3" placeholder="Input Telp...">
+                    </div>
+                    <div class="col-12">
+                        <div class="label-form">Owner</div>
+                        <select class="form-control mb-3 py-0 px-3" name="" id="">
+                            <option value="" selected disabled>Select Owner</option>
+                            <option value="" >John</option>
+                            <option value="" >Jack</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="containerFile">
+                            <input type="file" id="file-input" class="d-none" onchange="getFileInfo(this)" accept ="application/pdf" multiple />
+                            <label for="file-input" class="uploadFile">
+                                <i class="bi bi-cloud-upload"></i>
+                                <div class="labelClick"><span class="click">Klik Untuk Upload </span> Dokumen Sertifikasi</div>
+                                <div class="labelAlert">Hanya File Pdf, Maksimal size 50MB</div>
+                            </label>
+                            <div class="file-result d-none">
+                                <div class="file-icon">
+                                    <i class="bi bi-file-earmark-zip"></i>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <div class="file-names d-flex flex-column ">
+                                        <span class="name text-start">Profile Picture</span>
+                                        <span class="size text-start">1MB</span>
+                                    </div>
+                                    <div>
+                                        <button onclick="destroy(this)">
+                                            <i class="bi bi-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="containerFile">
+                            <input type="file" id="file-input2" class="d-none" onchange="getFileInfo(this)" multiple />
+                            <label for="file-input2" class="uploadFile">
+                                <i class="bi bi-cloud-upload"></i>
+                                <div class="labelClick"><span class="click">Klik Untuk Upload </span> Foto Profile</div>
+                                <div class="labelAlert">Hanya File JPG, PNG, JPEG, Maksimal size 50MB</div>
+                            </label>
+                            <div class="file-result d-none">
+                                <div class="file-icon">
+                                    <i class="bi bi-file-earmark-zip"></i>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <div class="file-names d-flex flex-column ">
+                                        <span class="name text-start">Profile Picture</span>
+                                        <span class="size text-start">1MB</span>
+                                    </div>
+                                    <div>
+                                        <button onclick="destroy(this)">
+                                            <i class="bi bi-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <button class="btn-blue-lg w-100">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap-5.3.2.min.js"></script>
+    <script src="js/datatables/dt.js"></script>
+    <script src="js/apexchart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        const getFileInfo = (evt)=>{
+            const element = evt.closest('.containerFile')
+            element.querySelector('label').classList.toggle('d-none')
+            element.querySelector('.file-result').classList.toggle('d-none')
+            let size = evt.files[0].size /1024/1024
+            size = size.toFixed(2)
+            const name = evt.files[0].name 
+            element.querySelector('.name').innerHTML = `${name}`
+            element.querySelector('.size').innerHTML = `${size} MB`
+        }
+
+        const destroy = evt => {
+            const node = evt.closest('.containerFile')
+            node.querySelector('input').value = null
+            node.querySelector('label').classList.toggle('d-none')
+            node.querySelector('.file-result').classList.toggle('d-none')
+        }
+
+    </script>
+    
+
+</body>
+</html>

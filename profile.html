@@ -105,70 +105,80 @@
         </div>
     </div>
     <section class="content">
-        <div class="row mt-4">
-            <div class="col-12 mb-3">
-                <div class="title-content">Kelola SDM</div>
-            </div>
-            <div class="col-12">
-                <div class="cardPart">
-                    <div class="cardHead justify-sb">
-                        <div class="titleCard">Data SDM</div>
-                        <div class="justify-start gap-3">
-                            <div class="containerSearch">
-                                <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch">
-                                <i class="bi bi-search"></i>
+        <div class="row mt-4 justify-content-center">
+
+            <div class="col-lg-5">  
+                <div class="borderCard p-0">
+                    <div class="headerProfile">
+                        <img src="img/shape/shape1.svg" alt="" class="shape-1">
+                        <img src="img/shape/shape6.svg" alt="" class="shape-6">
+                    </div>
+                    <div class="contentProfile">
+                        <div class="containerUser">
+                            <img src="img/john.jpg" alt="" class="userImg">
+                        </div>
+                        <div class="containerName">
+                            <div class="name">Jhone Doe<i class="bi bi-pen"></i></div>
+                            <div class="job">System Administrator</div>
+                        </div>
+                        <div class="containerBio">
+                            <div class="title mb-2">Your Profile</div>
+                            <div class="containerText">
+                                <div class="text1">NIK</div>
+                                <div class="text2">GC110080</div>
                             </div>
-                            <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                            <div class="containerText">
+                                <div class="text1">Jabatan</div>
+                                <div class="text2">System Administrator</div>
+                            </div>
+                            <div class="containerText">
+                                <div class="text1">Email</div>
+                                <div class="text2">example@gmail.com</div>
+                            </div>
+                            <div class="containerText">
+                                <div class="text1">Nomor Telepon</div>
+                                <div class="text2">0822322151</div>
+                            </div>
+                            <div class="containerText">
+                                <div class="text1">Alamat Rumah</div>
+                                <div class="text2"> Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kota Bandung, Jawabarat 40235</div>
+                            </div>
+                        </div>
+                        <div class="containerBio">
+                            <div class="title mb-2">Lampiran</div>
+                            <a class="containerAttachment">
+                                <div class="justify-start gap-2">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    <div class="titleAttach">Curriculum Vitae</div>
+                                </div>
+                                <a href="" class="text-decoration-none justify-start">
+                                    <div class="docName">Document</div>
+                                    <div class="format">.pdf</div>
+                                </a>
+                            </a>
+                            <div class="containerAttachment mt-2">
+                                <div class="justify-start gap-2">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    <div class="titleAttach">Curriculum Vitae</div>
+                                </div>
+                                <a href="" class="text-decoration-none justify-start">
+                                    <div class="docName">Document_pendukung_rahasia</div>
+                                    <div class="format">.pdf</div>
+                                </a>
+                            </div>
+                            <div class="containerAttachment mt-2">
+                                <div class="justify-start gap-2">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    <div class="titleAttach">Sertifikasi</div>
+                                </div>
+                                <a href="" class="text-decoration-none justify-start">
+                                    <div class="docName">Document_rahasia</div>
+                                    <div class="format">.pdf</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="cardBody scrollX">
-                        <table class="table no-wrap" id="DTtable">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Bagian</th>
-                                    <th>Kompetensi</th>
-                                    <th>ID Sertifikasi</th>
-                                    <th>Masa Berlaku</th>
-                                    <th>Tempat Lahir</th>
-                                    <th>Tgl Lahir</th>
-                                    <th>Alamat</th>
-                                    <th>Email</th>
-                                    <th>Telp</th>
-                                    <th>Owner</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><div class="fw-5">Hendra</div></td>
-                                    <td>IT Tech</td>
-                                    <td>Komputasi</td>
-                                    <td>332100185</td>
-                                    <td>02 Jan 2024</td>
-                                    <td>Bandung</td>
-                                    <td>06 June 2000</td>
-                                    <td>
-                                        <div class="address-truncate">
-                                            Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
-                                        </div>
-                                    </td>
-                                    <td>example@gmail.com</td>
-                                    <td>0897866576</td>
-                                    <td>Jack</td>
-                                    <td>
-                                        <div class="btn-act">
-                                            <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
-                                            <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
-                                            <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <img src="img/shape/shape6.svg" alt="" class="shape-card">
                 </div>
             </div>
         </div>
@@ -189,11 +199,11 @@
                         <div class="col-12">
                             <div class="containerName">
                                 <img src="img/john.jpg" alt="" class="imgDetail">
-                                <div class="name">Jhon Doe</div>
-                                <a href="#" class="justify-center gap-2 text-decoration-none">
+                                <div class="name">Jhone Doe</div>
+                                <div class="justify-center gap-2">
                                     <i class="bi bi-file-earmark-pdf"></i>
                                     <div class="titleAttach">Sertifikasi.pdf</div>
-                                </a>
+                                </div>
                             </div>
                             <div class="containerDetail">
                                 <div class="containerText">
@@ -202,7 +212,7 @@
                                 </div>
                                 <div class="containerText">
                                     <div class="text1">Nama</div>
-                                    <div class="text2">Jhon Doe</div>
+                                    <div class="text2">Jhone Doe</div>
                                 </div>
                                 <div class="containerText">
                                     <div class="text1">Bagian</div>
@@ -251,6 +261,7 @@
             </div>
         </div>
     </div>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap-5.3.2.min.js"></script>
     <script src="js/datatables/dt.js"></script>
@@ -259,68 +270,5 @@
     <script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
-    
-
-    <script>
-        $(document).ready(function () {
-
-            $('#DTtable').DataTable({
-                dom: 'frtp',
-                aLengthMenu: [
-                    [5, 10, 25, 50, -1],
-                    [5, 10, 25, 50, "All"]
-                ],
-                processing: true,
-                pageLength: 5,
-                responsive: true,
-                bInfo: false,
-                fixedColumns: {
-                    left: 0,
-                    right: 1
-                },
-                language: {
-                    'lengthMenu': 'Sort _MENU_',
-                }
-            });
-            
-        })
-
-        // Custom Search
-        const search = document.getElementById('DTtableSearch')
-        search.addEventListener('keyup', function(evt){
-            const searchInput = document.querySelector('.dataTables_filter').querySelector('input')
-            searchInput.value = evt.target.value
-            let e = document.createEvent('HTMLEvents');
-            e.initEvent("keyup",false,true);
-            searchInput.dispatchEvent(e);
-        });
-
-        $('#deleteFile').on('click', function (event) {
-            event.preventDefault();
-            const url = $(this).attr('href');
-            swal({
-                title: "Are You Sure..?",
-                text: "Data yang dihapus tidak akan bisa dikembalikan lagi !",
-                type: "warning",
-                showCancelButton: true,
-                cancelButtonColor: "#F4F6FB",
-                confirmButtonColor: "#2E9CFF",
-                confirmButtonText: "Yes",
-                cancelButtonText: "No ",
-                closeOnConfirm: false,
-                closeOnCancel: false
-            },
-            function(isConfirm){
-                if (isConfirm) {
-                    // window.location.href = url;
-                    swal("Data Dihapus", "Data telah dihapus secara permanent.", "success");
-                } else {
-                    swal("Batal", "Data Anda Kembali Aman", "error");
-                }
-            }); 
-        });
-        
-    </script>
-
 </body>
 </html>

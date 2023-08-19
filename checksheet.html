@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-   <head>
+    <head>
         <meta charset="UTF-8">
         <title> Checksheet DJKA</title>
         <link rel="stylesheet" href="css/font/poppins.css">
-        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/datatables/dt.css">
         <link rel="stylesheet" href="css/dashboard.css">
-        <link rel="stylesheet" href="css/primary.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -33,7 +32,7 @@
             <img src="img/logo/djka.svg" alt="" class="djkaImg">
         </div>
         <ul class="nav-links">
-            <div class="titleNav">Beranda</div>
+            <!-- <div class="titleNav">Beranda</div> -->
             <li class="nav-menu menu-link">
                 <a href="#">
                     <div class="nav-icon">
@@ -42,46 +41,58 @@
                     <span class="link_name">Dashboard</span>
                 </a>
             </li>
-            <div class="titleNav mt-3">Master Data</div>
-            <li class="nav-menu menu-link">
-                <a href="#">
-                    <div class="nav-icon">
-                        <i class="bi bi-compass"></i>
-                    </div>
-                    <span class="link_name">Location</span>
-                </a>
-            </li>
-            <li class="nav-menu menu-link">
-                <a href="#">
-                    <div class="nav-icon">
-                        <i class="bi bi-inboxes-fill"></i>
-                    </div>
-                    <span class="link_name">Aset Sarana</span>
-                </a>
-            </li>
-            <li class="nav-menu menu-link">
-                <a href="#">
-                    <div class="nav-icon">
-                        <i class="bi bi-tools"></i>
-                    </div>
-                    <span class="link_name">Tools</span>
-                </a>
-            </li>
-            <li class="nav-menu menu-link">
-                <a href="#">
-                    <div class="nav-icon">
-                        <i class="bi bi-gear-wide-connected"></i>
-                    </div>
-                    <span class="link_name">Spare Part</span>
-                </a>
-            </li>
-            <li class="nav-menu menu-link">
-                <a href="#">
-                    <div class="nav-icon">
-                        <i class="bi bi-person-lines-fill"></i>
-                    </div>
-                    <span class="link_name">SDM</span>
-                </a>
+            <!-- <div class="titleNav mt-3">Master Data</div> -->
+            <li class="nav-menu menu-down">
+                <div class="arrow-link">
+                    <a href="#">
+                        <div class="nav-name">
+                            <div class="link_name">Master Data</div>
+                            <i class="bi bi-chevron-right arrow"></i>
+                        </div>
+                    </a>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-compass"></i>
+                            </div>
+                            <span class="link_name">Location</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-inboxes-fill"></i>
+                            </div>
+                            <span class="link_name">Aset Sarana</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <span class="link_name">Tools</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+                            <span class="link_name">Spare Part</span>
+                        </a>
+                    </li>
+                    <li class="submenu-link">
+                        <a href="sdm.html">
+                            <div class="nav-icon">
+                                <i class="bi bi-person-lines-fill"></i>
+                            </div>
+                            <span class="link_name">SDM</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
         <div class="containerAccount">
@@ -155,7 +166,7 @@
                                         </div>
                                         <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                     </div>
-                                    <hr class="pt-1">
+                                    <hr class="my-4">
                                     <div class="w-100">
                                         <span class="text-small-grey">Standar - (Marking tidak geser)</span>
                                         <div class="labelForm sm mb-2">Gearbox (cek visual kelengkapan fastening/mur baut)</div>
@@ -175,7 +186,7 @@
                                         </div>
                                         <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                     </div>
-                                    <hr class="pt-1">
+                                    <hr class="my-4">
                                     <div class="w-100">
                                         <span class="text-small-grey">Standar - (Lengkap,tidak kendur)</span>
                                         <div class="labelForm sm mb-2">Gardan shaft (cek visual kelengkapan fastening/mur baut)</div>
@@ -195,7 +206,7 @@
                                         </div>
                                         <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                     </div>
-                                    <hr class="pt-1">
+                                    <hr class="my-4">
                                     <div class="w-100">
                                         <span class="text-small-grey">Standar - (Tidak bocor grease)</span>
                                         <div class="labelForm sm mb-2">Journal bearing (Cek kondisi dari kebocoran grease overheadting)</div>
@@ -215,7 +226,7 @@
                                         </div>
                                         <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                     </div>
-                                    <hr class="pt-1">
+                                    <hr class="my-4">
                                     <div class="w-100">
                                         <span class="text-small-grey">Standar - (Tidak retak,terpasang)</span>
                                         <div class="labelForm sm mb-2">Tread brake (Brake cylinder) (Cek instalasi tread brake dari bogie frame)</div>
@@ -235,7 +246,7 @@
                                         </div>
                                         <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                     </div>
-                                    <hr class="pt-1">
+                                    <hr class="my-4">
                                     <div class="w-100">
                                         <span class="text-small-grey">Standar - (Tebal minimal 10mm)</span>
                                         <div class="labelForm sm mb-2">rem blok (Cek kondisi)</div>
@@ -284,7 +295,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Terpasang lengkap,kondisi baik)</span>
                                             <div class="labelForm sm mb-2">Rantai pengaman (Cek visual rantai pengaman)</div>
@@ -333,7 +344,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Batas add-full deep sick)</span>
                                             <div class="labelForm sm mb-2">level oli engine (Cek level oli engine)</div>
@@ -353,7 +364,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Tidak aus atau retak)</span>
                                             <div class="labelForm sm mb-2">Belt alternator (Cek /stel/ganti belt)</div>
@@ -373,7 +384,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Tidak cacat/retak)</span>
                                             <div class="labelForm sm mb-2">Hose dan klem (Cek semua hose dari kebocoran,pecah,lembek,dan klem yang lepas)</div>
@@ -393,7 +404,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Tidak rusak/pecah)</span>
                                             <div class="labelForm sm mb-2">Panel instrumen (Cek kondisi gauge dari kerusakan/pecah)</div>
@@ -442,7 +453,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Batas low-full deep stick)</span>
                                             <div class="labelForm sm mb-2">Level oli genset (Cek level oli genset)</div>
@@ -462,7 +473,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Coolant level/air radiator (Cek level coolant,tambahkan jika diperlukan)</div>
@@ -482,7 +493,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Tidak retak/ sobek,lembek,menggelembung)</span>
                                             <div class="labelForm sm mb-2">Hose dan klem (Cek kondisi hose dan klem)</div>
@@ -502,7 +513,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Water temperatur</div>
@@ -522,7 +533,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Oli pressure</div>
@@ -571,7 +582,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Lengkap & Kencang)</span>
                                             <div class="labelForm sm mb-2">Fastening/mur baut (Cek kelengkapan dan kekencangan fastening antara engine-transmisi serta transmisi-gardan shaft)</div>
@@ -591,7 +602,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Batas max-min)</span>
                                             <div class="labelForm sm mb-2">Hydrostatic tank (Cek level oli)</div>
@@ -611,7 +622,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Cooling system (Cek level coolant,tambahkan jika dibutuhkan)</div>
@@ -660,7 +671,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - P= 9,5 bar</span>
                                             <div class="labelForm sm mb-2">Main reservoir (Cek pressure gauge sebelah kiri jarum warna merah)</div>
@@ -680,7 +691,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - P= 5 bar</span>
                                             <div class="labelForm sm mb-2">Brake pipe (Saat release brake) (Cek pressure gauge sebelah kiri jarum warna putih)</div>
@@ -700,7 +711,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Fungsi kerja pengereman</div>
@@ -720,7 +731,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Automatic brake Full service brake</div>
@@ -740,7 +751,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Parking brake</div>
@@ -760,7 +771,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Independent brake (Full independen brake)</div>
@@ -780,7 +791,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Pressure switch kompresor (Cek fungsi cut in dan cut off kompresor)</div>
@@ -800,7 +811,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Bersih)</span>
                                             <div class="labelForm sm mb-2">Tekanan udara (Keluarkan uap dan endapan pada tangki udara)</div>
@@ -820,7 +831,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Batas min-max gelas dugasaat kompresor ON)</span>
                                             <div class="labelForm sm mb-2">Oli kompresor (Cek level oli kompresor)</div>
@@ -840,7 +851,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Jam kerja kompresor (Catat jam kerja kompresor)</div>
@@ -878,7 +889,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Berfungsi)</span>
                                             <div class="labelForm sm mb-2">Headlight</div>
@@ -887,7 +898,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Berfungsi)</span>
                                             <div class="labelForm sm mb-2">Lampu Sinyal</div>
@@ -896,7 +907,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Berfungsi)</span>
                                             <div class="labelForm sm mb-2">Speedometer</div>
@@ -905,7 +916,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Berfungsi)</span>
                                             <div class="labelForm sm mb-2">Radiolok</div>
@@ -914,7 +925,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Berfungsi)</span>
                                             <div class="labelForm sm mb-2">Pemadam api (APAR)	</div>
@@ -923,7 +934,7 @@
                                                 <input type="text" class="form-control" id="" name="" placeholder="Kabin 2...">
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (380 VAC ± 10%)</span>
                                             <div class="labelForm sm mb-2">Volmeter 380 VAC</div>
@@ -938,7 +949,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">Standar - (Minimal 23 VDC)</span>
                                             <div class="labelForm sm mb-2">Volmeter 24 VDC</div>
@@ -953,7 +964,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Amperemeter</div>
@@ -968,7 +979,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Water temperature</div>
@@ -983,7 +994,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Oli pressure</div>
@@ -998,7 +1009,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">RPM meter</div>
@@ -1013,7 +1024,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Fuel meter</div>
@@ -1028,7 +1039,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">-</span>
                                             <div class="labelForm sm mb-2">Oli temperatur</div>
@@ -1043,7 +1054,7 @@
                                                 </div>                                              
                                             </div>
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         
                                     </div>
                                 </div>
@@ -1074,7 +1085,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">(Masing-masing 1 buah)</span>
                                             <div class="labelForm sm mb-2">Bendera merah dan kuning</div>
@@ -1094,7 +1105,7 @@
                                             </div>
                                             <input type="text" class="form-control" id="" name="" placeholder="Keterangan...">
                                         </div>
-                                        <hr class="pt-1">
+                                        <hr class="my-4">
                                         <div class="w-100">
                                             <span class="text-small-grey">(Jumlah)</span>
                                             <div class="labelForm sm mb-2">Stop block</div>
