@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/datatables/dt.css">
         <link rel="stylesheet" href="css/sweetalert.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/select2.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -157,8 +158,8 @@
                         <input type="text" class="form-control mb-3" placeholder="Input Telp...">
                     </div>
                     <div class="col-12">
-                        <div class="label-form">Owner</div>
-                        <select class="form-control mb-3 py-0 px-3" name="" id="">
+                        <div class="label-form ">Owner</div>
+                        <select class="form-control searchselect mb-3 py-0 px-3" name="" id="">
                             <option value="" selected disabled>Select Owner</option>
                             <option value="" >John</option>
                             <option value="" >Jack</option>
@@ -235,6 +236,7 @@
     <script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/select2.min.js"></script>
 
     <script>
         const getFileInfo = (evt)=>{
@@ -254,6 +256,10 @@
             node.querySelector('label').classList.toggle('d-none')
             node.querySelector('.file-result').classList.toggle('d-none')
         }
+
+        $(document).ready(function() {
+            $('.searchselect').select2();
+        });
 
     </script>
     
