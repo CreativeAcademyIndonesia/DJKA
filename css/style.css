@@ -167,7 +167,7 @@
     font-size: 12px;
 }
 
-textarea {
+.card-primary textarea {
     min-height: 120px;
     padding: 14px 20px;
 }
@@ -1701,7 +1701,7 @@ hr{
 }
 
 .select2-search__field{
-    display: block !important;
+    /* display: block !important;
     width: 100% !important;
     padding: 10px 18px  !important;
     height: 50px !important;
@@ -1711,10 +1711,24 @@ hr{
     border-radius: 16px !important;
     background: white !important;
     transition: .2s !important;
-    border: 1px solid #ddd !important;
+    border: 1px solid #ddd !important; */
 }
 
 .select2-search__field:active{
     border: none !important;
     outline: none !important;
+}
+
+.select2-container--default .select2-selection--multiple{
+    display: block !important;
+    width: 100% !important;
+    padding: 10px 18px !important;
+    height: 50px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #6B7C8E !important;
+    border-radius: 16px !important;
+    background: #F4F6FB !important;
+    border: none !important;
+    transition: .2s !important;
 }
