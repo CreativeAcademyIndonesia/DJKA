@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/datatables/dt.css">
         <link rel="stylesheet" href="css/sweetalert.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
@@ -104,6 +104,7 @@
             <a href="login.html"><i class="bi bi-box-arrow-right"></i></a>
         </div>
     </div>
+
     <section class="content">
         <div class="row mt-4">
             <div class="col-12 mb-3">
@@ -147,66 +148,266 @@
                         </div>
                     </div>
                 </div>
-                <div class="cardPart">
-                    <div class="cardHead justify-sb">
-                        <div class="titleCard">Data SDM</div>
-                        <div class="justify-start gap-3">
-                            <div class="containerSearch">
-                                <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch">
-                                <i class="bi bi-search"></i>
+                
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-harian-tab" data-bs-toggle="tab" data-bs-target="#nav-harian" type="button" role="tab" aria-controls="nav-harian" aria-selected="true">Harian</button>
+                            <button class="nav-link" id="nav-bulanan-tab" data-bs-toggle="tab" data-bs-target="#nav-bulanan" type="button" role="tab" aria-controls="nav-bulanan" aria-selected="false">Bulanan</button>
+                            <button class="nav-link" id="nav-6harian-tab" data-bs-toggle="tab" data-bs-target="#nav-6harian" type="button" role="tab" aria-controls="nav-6harian" aria-selected="false">6 Harian</button>
+                            <button class="nav-link" id="nav-tahunan-tab" data-bs-toggle="tab" data-bs-target="#nav-tahunan" type="button" role="tab" aria-controls="nav-tahunan" aria-selected="false">Tahunan</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-harian" role="tabpanel" aria-labelledby="nav-harian-tab" tabindex="0">
+                            <div class="cardPart">
+                                <div class="cardHead justify-sb">
+                                    <div class="titleCard">Data SDM</div>
+                                    <div class="justify-start gap-3">
+                                        <div class="containerSearch">
+                                            <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+                                        <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                                    </div>
+                                </div>
+                                <div class="cardBody scrollX">
+                                    <table class="table no-wrap" id="DTtable">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama</th>
+                                                <th>Bagian</th>
+                                                <th>Kompetensi</th>
+                                                <th>ID Sertifikasi</th>
+                                                <th>Masa Berlaku</th>
+                                                <th>Tempat Lahir</th>
+                                                <th>Tgl Lahir</th>
+                                                <th>Alamat</th>
+                                                <th>Email</th>
+                                                <th>Telp</th>
+                                                <th>Owner</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><div class="fw-5">Hendra</div></td>
+                                                <td>IT Tech</td>
+                                                <td>Komputasi</td>
+                                                <td>332100185</td>
+                                                <td>02 Jan 2024</td>
+                                                <td>Bandung</td>
+                                                <td>06 June 2000</td>
+                                                <td>
+                                                    <div class="address-truncate">
+                                                        Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
+                                                    </div>
+                                                </td>
+                                                <td>example@gmail.com</td>
+                                                <td>0897866576</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <div class="btn-act">
+                                                        <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
+                                                        <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
+                                                        <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                        </div>
+                        <div class="tab-pane fade" id="nav-bulanan" role="tabpanel" aria-labelledby="nav-bulanan-tab" tabindex="0">
+                            <div class="cardPart">
+                                <div class="cardHead justify-sb">
+                                    <div class="titleCard">Data SDM</div>
+                                    <div class="justify-start gap-3">
+                                        <div class="containerSearch">
+                                            <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch2">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+                                        <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                                    </div>
+                                </div>
+                                <div class="cardBody scrollX">
+                                    <table class="table no-wrap" id="DTtable2">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama</th>
+                                                <th>Bagian</th>
+                                                <th>Kompetensi</th>
+                                                <th>ID Sertifikasi</th>
+                                                <th>Masa Berlaku</th>
+                                                <th>Tempat Lahir</th>
+                                                <th>Tgl Lahir</th>
+                                                <th>Alamat</th>
+                                                <th>Email</th>
+                                                <th>Telp</th>
+                                                <th>Owner</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><div class="fw-5">Hendra</div></td>
+                                                <td>IT Tech</td>
+                                                <td>Komputasi</td>
+                                                <td>332100185</td>
+                                                <td>02 Jan 2024</td>
+                                                <td>Bandung</td>
+                                                <td>06 June 2000</td>
+                                                <td>
+                                                    <div class="address-truncate">
+                                                        Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
+                                                    </div>
+                                                </td>
+                                                <td>example@gmail.com</td>
+                                                <td>0897866576</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <div class="btn-act">
+                                                        <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
+                                                        <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
+                                                        <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-6harian" role="tabpanel" aria-labelledby="nav-6harian-tab" tabindex="0">
+                            <div class="cardPart">
+                                <div class="cardHead justify-sb">
+                                    <div class="titleCard">Data SDM</div>
+                                    <div class="justify-start gap-3">
+                                        <div class="containerSearch">
+                                            <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch3">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+                                        <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                                    </div>
+                                </div>
+                                <div class="cardBody scrollX">
+                                    <table class="table no-wrap" id="DTtable3">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama</th>
+                                                <th>Bagian</th>
+                                                <th>Kompetensi</th>
+                                                <th>ID Sertifikasi</th>
+                                                <th>Masa Berlaku</th>
+                                                <th>Tempat Lahir</th>
+                                                <th>Tgl Lahir</th>
+                                                <th>Alamat</th>
+                                                <th>Email</th>
+                                                <th>Telp</th>
+                                                <th>Owner</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><div class="fw-5">Hendra</div></td>
+                                                <td>IT Tech</td>
+                                                <td>Komputasi</td>
+                                                <td>332100185</td>
+                                                <td>02 Jan 2024</td>
+                                                <td>Bandung</td>
+                                                <td>06 June 2000</td>
+                                                <td>
+                                                    <div class="address-truncate">
+                                                        Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
+                                                    </div>
+                                                </td>
+                                                <td>example@gmail.com</td>
+                                                <td>0897866576</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <div class="btn-act">
+                                                        <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
+                                                        <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
+                                                        <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tahunan" role="tabpanel" aria-labelledby="nav-tahunan-tab" tabindex="0">
+                            <div class="cardPart">
+                                <div class="cardHead justify-sb">
+                                    <div class="titleCard">Data SDM</div>
+                                    <div class="justify-start gap-3">
+                                        <div class="containerSearch">
+                                            <input type="text" class="searchTable" placeholder="Search" id="DTtableSearch4">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+                                        <a href="tambahsdm.html" class="btn-blue-lg text-decoration-none" >Tambah</a>
+                                    </div>
+                                </div>
+                                <div class="cardBody scrollX">
+                                    <table class="table no-wrap" id="DTtable4">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama</th>
+                                                <th>Bagian</th>
+                                                <th>Kompetensi</th>
+                                                <th>ID Sertifikasi</th>
+                                                <th>Masa Berlaku</th>
+                                                <th>Tempat Lahir</th>
+                                                <th>Tgl Lahir</th>
+                                                <th>Alamat</th>
+                                                <th>Email</th>
+                                                <th>Telp</th>
+                                                <th>Owner</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><div class="fw-5">Hendra</div></td>
+                                                <td>IT Tech</td>
+                                                <td>Komputasi</td>
+                                                <td>332100185</td>
+                                                <td>02 Jan 2024</td>
+                                                <td>Bandung</td>
+                                                <td>06 June 2000</td>
+                                                <td>
+                                                    <div class="address-truncate">
+                                                        Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
+                                                    </div>
+                                                </td>
+                                                <td>example@gmail.com</td>
+                                                <td>0897866576</td>
+                                                <td>Jack</td>
+                                                <td>
+                                                    <div class="btn-act">
+                                                        <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
+                                                        <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
+                                                        <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="cardBody scrollX">
-                        <table class="table no-wrap" id="DTtable">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Bagian</th>
-                                    <th>Kompetensi</th>
-                                    <th>ID Sertifikasi</th>
-                                    <th>Masa Berlaku</th>
-                                    <th>Tempat Lahir</th>
-                                    <th>Tgl Lahir</th>
-                                    <th>Alamat</th>
-                                    <th>Email</th>
-                                    <th>Telp</th>
-                                    <th>Owner</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><div class="fw-5">Hendra</div></td>
-                                    <td>IT Tech</td>
-                                    <td>Komputasi</td>
-                                    <td>332100185</td>
-                                    <td>02 Jan 2024</td>
-                                    <td>Bandung</td>
-                                    <td>06 June 2000</td>
-                                    <td>
-                                        <div class="address-truncate">
-                                            Jl. Soekarno Hatta No. 293 Kb. Lega, Kec. Bojongloa kidul, Kab. Bandung, Kota Bandung
-                                        </div>
-                                    </td>
-                                    <td>example@gmail.com</td>
-                                    <td>0897866576</td>
-                                    <td>Jack</td>
-                                    <td>
-                                        <div class="btn-act">
-                                            <a href="editsdm.html" class="btn-yellow"><i class="bi bi-pencil-square"></i></a>
-                                            <a href="#" class="btn-blue" data-bs-toggle="modal" data-bs-target="#tblDetail"><i class="bi bi-search"></i></a>
-                                            <a href="#" id="deleteFile" class="btn-red"><i class="bi bi-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -288,6 +489,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap-5.3.2.min.js"></script>
     <script src="js/datatables/dt.js"></script>
@@ -319,18 +522,79 @@
                     'lengthMenu': 'Sort _MENU_',
                 }
             });
+
+            $('#DTtable2').DataTable({
+                dom: 'frtp',
+                aLengthMenu: [
+                    [5, 10, 25, 50, -1],
+                    [5, 10, 25, 50, "All"]
+                ],
+                processing: true,
+                pageLength: 5,
+                responsive: true,
+                bInfo: false,
+                fixedColumns: {
+                    left: 0,
+                    right: 1
+                },
+                language: {
+                    'lengthMenu': 'Sort _MENU_',
+                }
+            });
+
+            $('#DTtable3').DataTable({
+                dom: 'frtp',
+                aLengthMenu: [
+                    [5, 10, 25, 50, -1],
+                    [5, 10, 25, 50, "All"]
+                ],
+                processing: true,
+                pageLength: 5,
+                responsive: true,
+                bInfo: false,
+                fixedColumns: {
+                    left: 0,
+                    right: 1
+                },
+                language: {
+                    'lengthMenu': 'Sort _MENU_',
+                }
+            });
+
+            $('#DTtable4').DataTable({
+                dom: 'frtp',
+                aLengthMenu: [
+                    [5, 10, 25, 50, -1],
+                    [5, 10, 25, 50, "All"]
+                ],
+                processing: true,
+                pageLength: 5,
+                responsive: true,
+                bInfo: false,
+                fixedColumns: {
+                    left: 0,
+                    right: 1
+                },
+                language: {
+                    'lengthMenu': 'Sort _MENU_',
+                }
+            });
             
         })
 
-        // Custom Search
-        const search = document.getElementById('DTtableSearch')
-        search.addEventListener('keyup', function(evt){
-            const searchInput = document.querySelector('.dataTables_filter').querySelector('input')
-            searchInput.value = evt.target.value
-            let e = document.createEvent('HTMLEvents');
-            e.initEvent("keyup",false,true);
-            searchInput.dispatchEvent(e);
-        });
+
+        // Custom search 
+        const searchTable = document.querySelectorAll('.searchTable')
+        searchTable.forEach((search)=>{
+            search.addEventListener('keyup', function(evt){
+                const searchInput = search.closest('.cardPart').querySelector('.dataTables_filter').querySelector('input')
+                console.log(searchInput)
+                searchInput.value = evt.target.value
+                let e = document.createEvent('HTMLEvents');
+                e.initEvent("keyup",false,true);
+                searchInput.dispatchEvent(e);
+            });
+        })
 
         $('#deleteFile').on('click', function (event) {
             event.preventDefault();

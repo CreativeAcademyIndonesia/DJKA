@@ -1732,3 +1732,17 @@ hr{
     border: none !important;
     transition: .2s !important;
 }
+
+.nav-tabs .nav-link{
+    color: #91959a;
+    padding: 10px 20px;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+}
+.nav-tabs .nav-link.active{
+    color: white;
+    font-weight: 600;
+    background-color: #0086FF !important;
+    border-color : #0086FF #0086FF #fff
+   
+}
